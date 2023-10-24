@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cont {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #fe9040;
+  overflow-x: hidden;
+  background-image: linear-gradient(90deg, #fe9040 0%, #fab5ca 100%);
+}
+.navcont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: none;
+  border: 2px solid black;
+}
+nav {
+  width: 100%;
+}
+.navcont nav {
+  background-color: #3f3910;
+  background-image: linear-gradient(147deg, #d8c861 32%, #ff2525 96%);
+
+  width: 100vw;
+  height: 22vh;
+}
+#navlist li img {
+  width: 90px;
+  height: 90px;
+}
+
+#navlist {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 30px;
+}
+#navlist a {
+  text-decoration: none;
+  color: black;
+  padding: 13px;
+  font-weight: bold;
+  font-size: larger;
+  font-style: italic;
+}
+#navlist img {
+  padding-top: 1px;
+  /* border: 2px solid black; */
+}
+#navitem {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+#navlist a:hover {
+  background-color: #d8c861;
+}
+.footerbox {
+  background-color: #3f3910;
+  background-image: linear-gradient(147deg, #d8c861 32%, #ff2525 96%);
+  width: 100%;
+  text-align: center;
+  min-height: 40px;
+}
+.footerbox p {
+  color: black;
+  font-size: 1.5rem;
+}
+.contentbox {
+  width: 70%;
+  margin: auto;
+  background-color: rgb(226, 204, 204);
+
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-shadow: 10px 10px 10px rgb(143, 54, 54);
+}
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rightbox img {
+  height: 290px;
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid rgb(156, 51, 68);
+  transition: all 0.6 linear 0.3;
+}
+.rightbox:hover {
+  transform: scale(1.1);
+}
+
+.leftbox {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.leftbox h1 {
+  font-size: 2rem;
+}
+.indbox {
+  font-size: 1.5rem;
+}
+.procbox {
+  font-size: 1.3rem;
+}
+h1 {
+  font-style: italic;
+  text-decoration: underline;
+}
+.rightbox {
+  position: relative;
+  overflow: hidden;
+  transform: all 0.3s linear 0s;
+  box-shadow: 1px 1px 10px rgb(109, 23, 23);
+  border-radius: 20px;
+}
+.rightbox .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(36, 34, 34, 0.713);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  opacity: 0;
+}
+.rightbox .overlay span {
+  color: white;
+  font-size: 1.2rem;
+}
+.rightbox .overlay:hover {
+  opacity: 1;
+  transform: all 0.3s linear 0s;
+}
+.middle {
+  height: 300px;
+  width: 100%;
+  background: rgb(180, 58, 131);
+  background: linear-gradient(
+    90deg,
+    rgba(180, 58, 131, 1) 0%,
+    rgba(253, 83, 29, 1) 50%,
+    rgba(252, 69, 111, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middlesection {
+  width: 50%;
+  height: 240px;
+  background-color: #7a9793;
+  box-shadow: 1px 1px 10px red;
+  position: absolute;
+  /* left: 50%;
+  top:50%; */
+  background-image: url("c.jpg");
+  background-repeat: no-repeat;
+  /* object-fit:contain; */
+  background-size: 100% 100%;
+  border-radius: 10px;
+  border: 2px solid black;
+  animation: slider 9s infinite linear;
+}
+@keyframes slider {
+  0% {
+    background-image: url("c.jpg");
+  }
+  25% {
+    background-image: url("rabdi.jpg");
+  }
+  40% {
+    background-image: url("jalebi.jpg");
+  }
+  65% {
+    background-image: url("mal.jpg");
+  }
+  80% {
+    background-image: url("gajar.jpg");
+  }
+  95% {
+    background-image: url("ladu.webp");
+  }
+}
+.gallery{
+  display: flex;
+  flex-direction: row;
+}
+/* .gallerysection img{
+  width: 38%;
+  height: 100%;
+  display: flex;
+  /* flex-direction:column;
+  justify-content: space-between;
+  align-items: center; */
+  /* padding: 30px; */
+  /* box-shadow: 1px 1px 4px rgb(0, 34, 255); */
+/* } */ 
+/* .pic td img{
+  width: 300px;
+  height: 100%;
+
+} */
